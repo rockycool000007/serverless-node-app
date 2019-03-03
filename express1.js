@@ -6,8 +6,16 @@ app.get('/', (request, response) => {
   response.send('Hello from express')
 })
 
-app.get('/test', (request, response) => {
-  response.send('This is test page')
+app.get('/current', (request, response) => {
+  response.send('This is current value')
+})
+
+app.get('/delete', (request, response) => {
+  response.send('This is deleted')
+})
+
+app.get('/next', (request, response) => {
+  response.send('This is next')
 })
 
 app.listen(port, (err) => {
