@@ -22,6 +22,8 @@ npm install <package> --save-dev
 
 // install express
 npm install express --save
+// or install claudia api builder
+npm i claudia-api-builder
 
 
 // create express1.js file to write the api
