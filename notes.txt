@@ -48,4 +48,8 @@ claudia create --handler lambda.handler --deploy-proxy-api --region us-west-1
 or
 // myapp name must be changed everytime while creating lambda function in the same region
 // app is name of the entry file of the node app
-claudia create --region us-east-1 --deploy-proxy-api --handler lambda.handler --name myapp --api-module app
+claudia create --region us-east-1 --deploy-proxy-api --handler lambda.handler --name myapp
+
+// --deploy-proxy-api needs handler
+// handler cant work with --api-module
+claudia create --region us-east-1 --name myapp --api-module app
