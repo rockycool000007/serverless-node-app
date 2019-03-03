@@ -45,3 +45,7 @@ claudia generate-serverless-express-proxy --express-module express1
 // deploy the application
 // note: you might need to configure aws if the below command does not return api url as the output
 claudia create --handler lambda.handler --deploy-proxy-api --region us-west-1
+or
+// myapp name must be changed everytime while creating lambda function in the same region
+// app is name of the entry file of the node app
+claudia create --region us-east-1 --deploy-proxy-api --handler lambda.handler --name myapp --api-module app
