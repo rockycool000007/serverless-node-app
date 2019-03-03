@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "opt-executor",
+    "name": "opt",
+    "region": "us-west-1"
+  },
+  "api": {
+    "id": "jta8yxkquc"
+  }
+}

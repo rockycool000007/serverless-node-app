@@ -1,0 +1,45 @@
+// create package json and initialize a node application
+npm init
+
+
+// create test index.js file
+nano index.js
+
+
+// run index.js
+// can be run by adding a script in package.json file (eg. npm start and you can specify the file to be ran)
+// test using console.log if application works on port 3000
+node index.js
+
+
+// install packages that you need to build using
+npm install <package> --save
+
+
+// install packages that you need during development
+npm install <package> --save-dev
+
+
+// install express
+npm install express --save
+
+
+// create express1.js file to write the api
+nano express1.js
+
+
+// Claudia could help you to deploy your app to AWS Lambda
+// Your code should be slightly modified to support AWS Lambda and deployment via Claudia.
+// You need to export your app instead of starting the server using app.listen
+
+// To make your app work correctly with AWS Lambda, you need to generate 
+// AWS Lambda wrapper for your Express app. With Claudia :
+
+// express1 is name of the entryfile for express
+// below command will also generate a lambda.js wrapper for AWS Lambda to work with nodejs
+claudia generate-serverless-express-proxy --express-module express1
+
+
+// deploy the application
+// note: you might need to configure aws if the below command does not return api url as the output
+claudia create --handler lambda.handler --deploy-proxy-api --region us-west-1
