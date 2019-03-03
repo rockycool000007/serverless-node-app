@@ -52,6 +52,7 @@ claudia create --region us-east-1 --deploy-proxy-api --handler lambda.handler --
 
 // --deploy-proxy-api needs handler
 // handler cant work with --api-module
+// myapp is used as executor name in IAM role i.e. a new role will be created named myapp-executor
 claudia create --region us-east-1 --name myapp --api-module app
 
 
