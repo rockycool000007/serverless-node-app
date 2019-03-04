@@ -60,3 +60,9 @@ claudia create --region us-east-1 --name myapp --api-module app
 
 // Reference
 https://medium.freecodecamp.org/how-to-secure-microservices-on-aws-with-cognito-api-gateway-and-lambda-4bfaa7a6583c
+
+// To verify if Cognito user is working, use the below url
+https://mediumapp.auth.us-east-1.amazoncognito.com/login?response_type=token&client_id=2nal62409rghvdqvsi96470bk6&redirect_uri=http://localhost:3000/authenticated
+
+Use url (domain name that you add while creating the user pool)
+response_type, client_id and redirect_uri
