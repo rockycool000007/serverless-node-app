@@ -57,3 +57,6 @@ claudia create --region us-east-1 --name myapp --api-module app
 
 
 // To update, use claudia update command
+
+// Reference
+https://medium.freecodecamp.org/how-to-secure-microservices-on-aws-with-cognito-api-gateway-and-lambda-4bfaa7a6583c
